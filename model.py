@@ -5,7 +5,7 @@ from optimum.intel.openvino import OVStableDiffusionPipeline
 from diffusers import LCMScheduler
 
 MODEL_CODE: str = "white"
-MODEL_ID: str = "rupeshs/sd15-lcm-square-openvino-int8"
+MODEL_ID: str = "Intel/sd-1.5-lcm-openvino"
 _pipeline: Optional[OVStableDiffusionPipeline] = None
 
 def get_pipeline() -> OVStableDiffusionPipeline:
